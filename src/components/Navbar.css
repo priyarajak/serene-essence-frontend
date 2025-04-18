@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #e9cfc3;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .nav-links a {
+    margin-left: 24px;
+    font-size: 1.1rem;
+    color: #3a2d27;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #8c6c5a;
+  }
+  

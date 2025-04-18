@@ -1,0 +1,21 @@
+.hero-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #e9cfc3;
+  }
+  
+  .brand-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 8rem;
+    color: #4d3b2e;
+    letter-spacing: 12px;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -10px;
+  }
+  
