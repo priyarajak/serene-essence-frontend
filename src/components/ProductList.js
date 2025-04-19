@@ -19,7 +19,7 @@ const ProductList = () => {
     cart.find(item => item.id === productId)?.quantity || 0;
 
   useEffect(() => {
-    fetch("http://localhost:5050/products")
+    fetch("https://serene-essence-backend.onrender.com/products")
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error("FETCH ERROR:", err));
