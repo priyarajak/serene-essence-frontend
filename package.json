@@ -44,5 +44,6 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  }
+  },
+  "homepage": "https://priyarajak.github.io/serene-essence-frontend"
 }
