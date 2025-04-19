@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="hero-container">
       <h1 className="brand-title">SERENE ESSENCE</h1>
-      <img src="/images/model_candle.png" alt="Serene Essence Banner" className="hero-image" />
+      <img src="images/model_candle.png" alt="Serene Essence Banner" className="hero-image" />
     </div>
   );
 };
