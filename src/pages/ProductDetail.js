@@ -9,7 +9,7 @@ const ProductDetail = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch(`http://localhost:5050/products/${id}`)
+    fetch(`http://serene-essence-backend.onrender.com/products/${id}`)
       .then(res => res.json())
       .then(data => setProduct(data))
       .catch(err => console.error("Failed to load product:", err));
