@@ -5,7 +5,7 @@ export default function NewArrivals() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5050/products")
+    fetch("https://serene-essence-backend.onrender.com/products")
       .then(res => res.json())
       .then(data => {
         const sorted = [...data].sort((a, b) => b.id - a.id);
