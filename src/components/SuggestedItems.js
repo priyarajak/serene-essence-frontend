@@ -14,7 +14,7 @@ const SuggestedItems = () => {
   };
   
   useEffect(() => {
-    fetch('http://localhost:5050/products')
+    fetch("https://serene-essence-backend.onrender.com/products")
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error("Failed to fetch products", err));
