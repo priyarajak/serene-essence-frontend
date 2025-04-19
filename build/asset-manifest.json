@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/serene-essence-frontend/static/css/main.ca268ec1.css",
+    "main.js": "/serene-essence-frontend/static/js/main.504dcf2a.js",
+    "index.html": "/serene-essence-frontend/index.html",
+    "main.ca268ec1.css.map": "/serene-essence-frontend/static/css/main.ca268ec1.css.map",
+    "main.504dcf2a.js.map": "/serene-essence-frontend/static/js/main.504dcf2a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca268ec1.css",
+    "static/js/main.504dcf2a.js"
+  ]
+}
