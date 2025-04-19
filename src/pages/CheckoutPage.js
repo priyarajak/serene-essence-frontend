@@ -24,7 +24,7 @@ const CheckoutPage = () => {
     if (stored) {
       const parsed = JSON.parse(stored);
       setUser(parsed.user);
-      fetch(`http://localhost:5050/get-addresses/${parsed.user.id}`)
+      fetch(`http://serene-essence-backend.onrender.com/get-addresses/${parsed.user.id}`)
         .then(res => res.json())
         .then(data => {
           setAddresses(data);
@@ -39,7 +39,7 @@ const CheckoutPage = () => {
     if (!selectedAddress) return alert('Please select an address.');
     if (!paymentMethod) return alert('Please select a payment method.');
 
-    fetch('http://localhost:5050/place-order', {
+    fetch('http://serene-essence-backend.onrender.com/place-order', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -56,13 +56,13 @@ const CheckoutPage = () => {
   };
 
   const handleAddAddress = async () => {
-    const response = await fetch('http://localhost:5050/save-address', {
+    const response = await fetch('http://serene-essence-backend.onrender.com/save-address', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...newAddress, user_id: user.id })
     });
     if (response.ok) {
-      const res = await fetch(`http://localhost:5050/get-addresses/${user.id}`);
+      const res = await fetch(`http://serene-essence-backend.onrender.com/get-addresses/${user.id}`);
       const updated = await res.json();
       setAddresses(updated);
       setSelectedAddress(updated[updated.length - 1].id);
