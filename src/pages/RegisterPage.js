@@ -14,7 +14,7 @@ export default function RegisterPage() {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://serene-essence-backend.onrender.com/register"), {
+    const response = await fetch("https://serene-essence-backend.onrender.com/register", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, password }),
